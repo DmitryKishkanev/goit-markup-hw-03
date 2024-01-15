@@ -87,10 +87,15 @@ header .logo {
 
 /* Герой */
 .hero {
+  width: 1600px;
+  height: 600px;
   background-color: var(--dark-bg-color);
 }
 
 .hero-text {
+  padding-top: 200px;
+  padding-bottom: 30px;
+  margin: 0;
   color: var(--text-header);
 
   text-align: center;
@@ -109,6 +114,7 @@ header .logo {
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
+  margin-left: 692px;
 
   background-color: var(--accent-color);
   color: #fff;
@@ -211,7 +217,15 @@ address .location {
 }
 
 /* Портфолио */
+
 .filter-buttons button {
+  display: inline-block;
+  min-width: 73px;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+
   color: var(--header-color);
   background-color: var(--secondary-background);
 
@@ -220,8 +234,6 @@ address .location {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.48px;
-
-  /* border: none; */
 }
 
 .filter-buttons button:hover,
