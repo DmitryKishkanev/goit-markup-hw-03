@@ -89,15 +89,12 @@ header .logo {
 
 /* Герой */
 .hero {
-  width: 1600px;
-  height: 600px;
   text-align: center;
 
   background-color: var(--dark-bg-color);
 }
 
 .hero-text {
-  padding-top: 200px;
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -130,6 +127,8 @@ header .logo {
 /* Преимущества */
 .hide-title {
   opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantages {
