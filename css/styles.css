@@ -46,6 +46,11 @@ img {
   align-items: center;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 header .logo {
   color: var(--ligo-black);
   font-family: raleway;
@@ -67,6 +72,7 @@ header .logo {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 /* .site-nav .nav-item:not(:last-child) {
@@ -101,6 +107,7 @@ header .logo {
 
 .auth-nav {
   display: flex;
+  margin-left: auto;
 }
 
 .auth-nav .nav-item + .nav-item {
@@ -177,12 +184,24 @@ header .logo {
 }
 
 .advantages-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+
+.item-advantage {
+  width: 270px;
+}
+
+/* .advantages-items .item-advantage + .item-advantage {
+  margin-left: 30px;
+} */
 
 .advantages-title {
   margin-top: 0;
@@ -223,12 +242,24 @@ header .logo {
   letter-spacing: 1.08px;
 }
 
+.classes-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /* Наша команда */
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
 
   background-color: var(--secondary-background);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .command-title {
@@ -302,10 +333,17 @@ address .location {
   padding: 94px 0;
 }
 
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .filter-buttons button {
   display: inline-block;
   min-width: 73px;
   padding: 6px 22px;
+  /* margin-right: 8px; */
   border: none;
   border-radius: 4px;
   text-align: center;
@@ -320,10 +358,19 @@ address .location {
   letter-spacing: 0.48px;
 }
 
+.filter-buttons .button + .button {
+  margin-left: 8px;
+}
+
 .filter-buttons button:hover,
 .filter-buttons button:focus {
   color: var(--text-header);
   background-color: var(--accent-color);
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-title {
