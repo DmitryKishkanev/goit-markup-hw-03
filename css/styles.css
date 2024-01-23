@@ -337,16 +337,17 @@ address .location {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-buttons button {
   display: inline-block;
   min-width: 73px;
   padding: 6px 22px;
-  /* margin-right: 8px; */
   border: none;
   border-radius: 4px;
   text-align: center;
+  cursor: pointer;
 
   color: var(--header-color);
   background-color: var(--secondary-background);
@@ -371,6 +372,22 @@ address .location {
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.portfoio-card {
+  width: 370px;
+  background-color: tomato;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfoio-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfoio-card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-title {
