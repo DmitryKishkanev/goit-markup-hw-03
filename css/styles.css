@@ -372,14 +372,20 @@ address .location {
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
   /* justify-content: space-between; */
 }
 
 .portfoio-card {
   width: 370px;
-  background-color: tomato;
+  margin: 15px;
+
+  /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+  /* width: calc((100% - 60px) / 3);
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
+
+  background-color: tomato;
 }
 
 .portfoio-card:nth-child(3n) {
@@ -389,6 +395,15 @@ address .location {
 .portfoio-card:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
+/* Альтернатива */
+/* .portfoio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfoio-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
 
 .portfolio-title {
   margin-top: 20px;
