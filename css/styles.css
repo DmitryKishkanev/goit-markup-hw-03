@@ -384,8 +384,6 @@ address .location {
   /* width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px; */
-
-  background-color: tomato;
 }
 
 .portfoio-card:nth-child(3n) {
@@ -408,6 +406,7 @@ address .location {
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 4px;
+  margin-left: 24px;
 
   color: var(--header-color);
 
@@ -420,6 +419,7 @@ address .location {
 .portfolio-items .project {
   margin-top: 0;
   margin-bottom: 20px;
+  margin-left: 24px;
 
   color: var(--text-color);
 
@@ -430,6 +430,7 @@ address .location {
 }
 
 .portfolio-items .project-description {
+  display: none;
   margin: 0;
 
   color: var(--text-color);
