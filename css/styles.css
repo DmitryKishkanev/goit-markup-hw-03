@@ -9,6 +9,7 @@
   --additional-background: #2f303a;
   --ligo-black: #000000;
   --address-element: rgba(255, 255, 255, 0.6);
+  --card-set-gap: 30px;
 }
 
 .page {
@@ -20,6 +21,8 @@
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -372,18 +375,25 @@ address .location {
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-  /* justify-content: space-between; */
+  /* margin: -15px; */
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+
+  background-color: #ccc;
 }
 
 .portfoio-card {
-  width: 370px;
-  margin: 15px;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  /* margin: 15px; */
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
 
   /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
   /* width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px; */
+
+  outline: 1px solid tomato;
 }
 
 .portfoio-card:nth-child(3n) {
