@@ -375,25 +375,17 @@ address .location {
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
-  /* margin: -15px; */
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-
-  background-color: #ccc;
 }
 
 .portfoio-card {
+  /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+  width: calc((100% - 60px) / 3);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
-  /* margin: 15px; */
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
-
-  /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
-  /* width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px; */
-
-  outline: 1px solid tomato;
+  overflow: hidden;
 }
 
 .portfoio-card:nth-child(3n) {
@@ -413,10 +405,14 @@ address .location {
   margin-bottom: 30px;
 } */
 
+.card-content {
+  padding: 20px 24px;
+}
+
 .portfolio-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 
   color: var(--header-color);
 
@@ -428,8 +424,7 @@ address .location {
 
 .portfolio-items .project {
   margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  margin-bottom: 0;
 
   color: var(--text-color);
 
