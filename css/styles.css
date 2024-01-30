@@ -8,7 +8,7 @@
   --secondary-background: #f5f4fa;
   --additional-background: #2f303a;
   --ligo-black: #000000;
-  --nav-border-color: #ececec;
+  --header-border-color: #ececec;
   --card-border-color: #eeeeee;
   --address-element: rgba(255, 255, 255, 0.6);
   --card-set-gap: 30px;
@@ -37,6 +37,10 @@ img {
   text-decoration: none;
 }
 
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 .container {
   width: 1230px;
   padding-left: 15px;
@@ -49,7 +53,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid tomato;
+  /* border-bottom: 1px solid tomato; */
 }
 
 .nav {
@@ -260,6 +264,7 @@ header .logo {
   padding-bottom: 94px;
 
   background-color: var(--secondary-background);
+  background-color: tomato;
 }
 
 .team {
