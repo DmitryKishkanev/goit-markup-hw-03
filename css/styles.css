@@ -8,6 +8,8 @@
   --secondary-background: #f5f4fa;
   --additional-background: #2f303a;
   --ligo-black: #000000;
+  --nav-border-color: #ececec;
+  --card-border-color: #eeeeee;
   --address-element: rgba(255, 255, 255, 0.6);
   --card-set-gap: 30px;
 }
@@ -47,6 +49,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid tomato;
 }
 
 .nav {
@@ -407,6 +410,9 @@ address .location {
 
 .card-content {
   padding: 20px 24px;
+  border-right: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
+  border-left: 1px solid var(--card-border-color);
 }
 
 .portfolio-title {
