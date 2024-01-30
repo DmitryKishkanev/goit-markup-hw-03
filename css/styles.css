@@ -147,7 +147,6 @@ header .logo {
   padding: 200px 0;
 
   text-align: center;
-  margin-bottom: 66px;
 
   background-color: var(--dark-bg-color);
 }
@@ -190,7 +189,7 @@ header .logo {
 }
 
 .advantages {
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 
 .advantages-items {
@@ -237,7 +236,8 @@ header .logo {
 
 /* Чем мы занимаемся */
 .classes {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .classes-title,
@@ -264,7 +264,6 @@ header .logo {
   padding-bottom: 94px;
 
   background-color: var(--secondary-background);
-  background-color: tomato;
 }
 
 .team {
